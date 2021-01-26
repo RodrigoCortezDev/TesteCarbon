@@ -38,6 +38,7 @@ const Layout: React.FC<IProps> = ({ children, teste }) => {
 			<Header>
 				<Link to="/cortez">Go to Cortez</Link>
 				<Link to="/home">Go to home</Link>
+				<Link to="/counter">Go to Counter</Link>
 				<Link to="/">Go to barra</Link>
 			</Header>
 			<ContainerContent>
