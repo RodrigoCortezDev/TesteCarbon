@@ -21,6 +21,9 @@ const Header = styled.div`
 
 	height: 10vh;
 `;
+const LinkNovo = styled(Link)`
+	padding-left: 10px;
+`;
 
 interface IProps {
 	teste: string;
@@ -36,10 +39,10 @@ const Layout: React.FC<IProps> = ({ children, teste }) => {
 	return (
 		<Container>
 			<Header>
-				<Link to="/cortez">Go to Cortez</Link>
-				<Link to="/home">Go to home</Link>
-				<Link to="/counter">Go to Counter</Link>
-				<Link to="/">Go to barra</Link>
+				<LinkNovo to="/cortez">Go to Cortez</LinkNovo>
+				<LinkNovo to="/home">Go to home</LinkNovo>
+				<LinkNovo to="/counter">Go to Counter</LinkNovo>
+				<LinkNovo to="/">Go to barra</LinkNovo>
 			</Header>
 			<ContainerContent>
 				<SideBar />
