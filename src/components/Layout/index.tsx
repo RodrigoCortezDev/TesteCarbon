@@ -1,4 +1,5 @@
 import React from 'react';
+import { SideNav } from 'carbon-components-react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -24,6 +25,9 @@ const Header = styled.div`
 const LinkNovo = styled(Link)`
 	padding-left: 10px;
 `;
+const SideMinha = styled(SideNav)`
+	padding-left: 10px;
+`;
 
 interface IProps {
 	teste: string;
@@ -39,6 +43,7 @@ const Layout: React.FC<IProps> = ({ children, teste }) => {
 	return (
 		<Container>
 			<Header>
+				<SideMinha isFixedNav />
 				<LinkNovo to="/cortez">Go to Cortez</LinkNovo>
 				<LinkNovo to="/home">Go to home</LinkNovo>
 				<LinkNovo to="/counter">Go to Counter</LinkNovo>
