@@ -1,33 +1,5 @@
 import React from 'react';
-import { SideNav } from 'carbon-components-react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-
-const Container = styled.div``;
-const ContainerContent = styled.div`
-	display: flex;
-	flex-direction: row;
-`;
-const SideBar = styled.div`
-	width: 10vw;
-	background-color: red;
-`;
-const Content = styled.div`
-	width: 90vw;
-	height: 90vh;
-`;
-const Header = styled.div`
-	width: 100vw;
-	background-color: aliceblue;
-
-	height: 10vh;
-`;
-const LinkNovo = styled(Link)`
-	padding-left: 10px;
-`;
-const SideMinha = styled(SideNav)`
-	padding-left: 10px;
-`;
+import { Container, ContainerContent, Content, Header, LinkNovo, SideBar, SideMinha } from './styled';
 
 interface IProps {
 	teste: string;
